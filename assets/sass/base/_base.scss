@@ -15,5 +15,10 @@ a {
 body{
     background-image: url(/images/overlay.png), url(/images/bg.jpg) ;
     background-size: auto, 100%, 100%;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }

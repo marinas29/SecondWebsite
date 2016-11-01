@@ -1,0 +1,61 @@
+.firsttab{
+    position: relative;
+
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1000px;
+        height: auto;
+        background-color: white;
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex: 2;
+
+            &__h1{
+                padding-left: 75px;
+                color: $color-base-black;
+                padding-bottom: 15px;
+                font-size: 42px;
+            }
+
+            &__paragraph{
+                padding-left: 75px;
+                color: $color-base-grey;
+                font-size: 30px;
+            }
+        }
+
+        &__image{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        &__right{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            &--icon{
+                color: white;
+                font-size: 36px;
+                padding: 15px;
+                background-color: $color-base-black;
+                cursor: pointer;
+
+                &:hover{
+                        padding-right: 20px;
+                }
+            }
+        }
+
+    }
+
+}

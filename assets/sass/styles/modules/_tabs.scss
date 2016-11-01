@@ -1,16 +1,27 @@
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 .tabs {
 
     display: flex;
     flex-direction: row;
     font-family: 'Open Sans';
     justify-content: center;
-    padding-top: 125px;
+    align-items: center;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 
     &__icon{
         font-size: 50px;
         color: white;
         padding: 20px;
         cursor: pointer;
+        z-index: 1;
 
         &--twitter{
         opacity: 0.5;
@@ -57,11 +68,6 @@
 
 .tabs .tab {
     display: none;
-    padding: 15px;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
 }
 
 .tabs input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
@@ -74,3 +80,4 @@
   width: 70px;
   margin: 20px auto;
 }*/
+}
