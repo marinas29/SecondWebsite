@@ -1,0 +1,18 @@
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul, nav, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-image: url(/images/overlay.png), url(/images/bg.jpg) ;
+    background-size: auto, 100%, 100%;
+}
