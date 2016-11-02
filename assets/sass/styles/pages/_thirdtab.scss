@@ -1,0 +1,85 @@
+.thirdtab{
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: auto;
+    padding: 20px;
+
+    &__h1{
+        color: $color-base-black;
+        font-weight: lighter;
+        padding-bottom: 15px;
+        font-size: 30px;
+        text-align: justify;
+
+        @include media-q() {
+            padding: 0;
+            padding-bottom: 20px;
+       }
+
+       @include media-q(xs) {
+           font-size: 20px;
+           padding: 0;
+           padding-bottom: 20px;
+      }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 15px;
+        font-size: 15px;
+        //padding: 10px;
+        border: 0;
+
+        & input{
+            display: block;
+            height: 50px;
+
+        }
+
+        &--name-email{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            @include media-q() {
+                display: flex;
+                flex-direction: column;
+           }
+
+            & input {
+                width: 49%;
+
+                @include media-q() {
+                    width: auto;
+               }
+            }
+
+        }
+
+        &--message{
+            height: 250px;
+        }
+    }
+
+    @include media-q(lg) {
+        width: 950px;
+    }
+
+    @include media-q(md) {
+        width: 700px;
+    }
+
+    @include media-q() {
+        width: 450px;
+    }
+
+    @include media-q(xs) {
+        width: 100%;
+    }
+
+}

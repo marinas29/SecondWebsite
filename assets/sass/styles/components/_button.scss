@@ -1,0 +1,14 @@
+.btn-default {
+    display: flex;
+    align-items: center;
+    background-color: $color-base-black;
+    width: 150px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    font-weight: lighter;
+    font-size: 15px;
+
+    &:hover{
+        background-color: lighten($color-base-black, 5);
+    }
+}

@@ -12,18 +12,18 @@
 
         <div class="tabs">
 
-        <input type="radio" checked name="tab" id="home">
-        <label for="home">
+        <input type="radio" checked name="tab" id="home" class="input-tab">
+        <label for="home" class="label-tab">
             <i class="fa fa-home tabs__icon"></i>
         </label>
 
-        <input type="radio" name="tab" id="work">
-        <label for="work">
+        <input type="radio" name="tab" id="work" class="input-tab">
+        <label for="work" class="label-tab">
             <i class="fa fa-folder-o tabs__icon"></i>
         </label>
 
-        <input type="radio" name="tab" id="contact">
-        <label for="contact">
+        <input type="radio" name="tab" id="contact" class="input-tab">
+        <label for="contact" class="label-tab">
             <i class="fa fa-envelope-o tabs__icon"></i>
         </label>
 
@@ -81,9 +81,20 @@
 
         <div class="tab">
             <div class="thirdtab">
-                teste
+                <h1 class="thirdtab__h1">Contact Me</h1>
                 <div class="thirdtab__form">
-                    teste teste teste
+
+                    <div class="thirdtab__form--name-email">
+
+                        <input name="" class="thirdtab__form" id="message" placeholder='Name'></input>
+                        <input name="" class="thirdtab__form" id="message" placeholder='Email'></input>
+
+                    </div>
+
+                    <input name="" class="thirdtab__form" id="message" placeholder='Subject'></input>
+                    <textarea name="" class="thirdtab__form thirdtab__form--message" id="message" placeholder='Message'></textarea>
+
+                    <input type="submit" class="btn-default" value="Send Message"  />
                 </div>
 
             </div>

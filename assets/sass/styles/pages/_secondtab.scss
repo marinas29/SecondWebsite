@@ -84,7 +84,8 @@
 
         @include media-q(xs) {
             flex-direction: column;
-            width: 310px;
+            width: 100%;
+            margin-bottom: 15px;
         }
 
     }
