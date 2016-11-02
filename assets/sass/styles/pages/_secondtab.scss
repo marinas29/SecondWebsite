@@ -1,0 +1,91 @@
+.secondtab{
+    position: relative;
+
+    &__content{
+        width: 1000px;
+        height: auto;
+        background-color: white;
+
+            &__h1{
+                padding-left: 70px;
+                color: $color-base-black;
+                padding-bottom: 15px;
+                padding-top: 35px;
+                font-size: 30px;
+                text-align: justify;
+
+                @include media-q() {
+                    padding: 20px;
+               }
+
+               @include media-q(xs) {
+                   font-size: 20px;
+              }
+            }
+
+            &__paragraph{
+                padding-left: 70px;
+                padding-right: 70px;
+                color: $color-base-grey;
+                font-size: 20px;
+                text-align: justify;
+
+                @include media-q() {
+                    padding: 20px;
+               }
+
+               @include media-q(xs) {
+                   font-size: 15px;
+                   padding: 0px 20px 20px;
+
+              }
+            }
+
+        &__grid{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 70px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            justify-content: space-between;
+
+            & img{
+                margin-bottom: 20px;
+
+                @include media-q() {
+                    padding: 0;
+               }
+            }
+
+            @include media-q() {
+                justify-content: center;
+                padding: 0;
+           }
+
+           @include media-q(xs) {
+               justify-content: center;
+          }
+
+        }
+
+        @include media-q(lg) {
+            width: 950px;
+        }
+
+        @include media-q(md) {
+            width: 700px;
+        }
+
+        @include media-q() {
+            flex-direction: column;
+            width: 450px;
+        }
+
+        @include media-q(xs) {
+            flex-direction: column;
+            width: 310px;
+        }
+
+    }
+}

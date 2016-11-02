@@ -1,3 +1,12 @@
 $color-base-transparent: rgba(255, 255, 255, 0.45);
 $color-base-grey: #ccc;
 $color-base-black: #363636;
+
+
+$screens: (
+    xss: 320px,
+    xs: 500px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);
