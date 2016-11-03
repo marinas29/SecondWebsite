@@ -1,0 +1,240 @@
+.twitter-modal{
+    width: 55%;
+    background-color: white;
+    position: relative;
+    margin-top: 18%;
+    margin-left: 22.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+    &__header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-height: 110px;
+
+        &--image{
+            width: 20%;
+            height: 20%;
+
+        }
+
+        &--icon-twitter{
+            background-color: #68B6F1;
+            color: white;
+            font-size: 60px;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media-q(lgg) {
+                height: 100%;
+                padding: 14.5px;
+            }
+
+            @include media-q(lg) {
+                font-size: 50px;
+            }
+
+            @include media-q(sm) {
+                font-size: 40px;
+            }
+
+            @include media-q(xs) {
+                font-size: 30px;
+            }
+        }
+
+        a {
+            width: 20%;
+        }
+
+        &--close{
+            background-color: #68B6F1;
+            color: lighten(#90CBF8, 10);
+            font-size: 60px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+
+            @include media-q(lg) {
+                font-size: 50px;
+            }
+
+            @include media-q(sm) {
+                font-size: 40px;
+            }
+
+            @include media-q(xs) {
+                font-size: 30px;
+            }
+
+        }
+
+        @include media-q(lgg) {
+            height: 100px;
+        }
+
+        @include media-q(lg) {
+            max-height: 90px;
+        }
+
+        @include media-q(md) {
+            max-height: 80px;
+        }
+
+        @include media-q(sm) {
+            max-height: 70px;
+        }
+
+        @include media-q(xs) {
+            max-height: 60px;
+        }
+
+
+
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        &__picture{
+
+            display: flex;
+            flex-direction: column;
+            font-size: 55px;
+            width: 20%;
+            text-align: center;
+            background-color:  lighten(#D5D9E2, 5);
+            padding: 20px;
+            color: darken(#D5D9E2, 20);
+            cursor: pointer;
+
+            &--camera{
+                border-bottom: 2px solid white;
+            }
+
+            @include media-q(lg) {
+                font-size: 50px;
+                padding: 20px;
+            }
+
+            @include media-q(sm) {
+                font-size: 40px;
+            }
+
+            @include media-q(xs) {
+                font-size: 30px;
+                padding: 5px;
+            }
+
+        }
+
+        &__message{
+            width: 60%;
+            height: auto;
+
+            & textarea{
+                height: 100%;
+                width: 100%;
+                font-size: 25px;
+                padding: 15px;
+
+                @include media-q(sm) {
+                    font-size: 20px;
+                }
+
+                @include media-q(xs) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__options{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: lighten(#90CBF8, 10);
+            width: 20%;
+            font-size: 55px;
+            padding: 20px;
+            color: darken(#DEEEFC, 25);
+            cursor: pointer;
+
+            &--image{
+                border-bottom: 2px solid white;
+
+            }
+
+            &--localization{
+                border-bottom: 2px solid white;
+
+            }
+
+            &--check{
+                color: white;
+                font-weight: lighter;
+            }
+
+            @include media-q(lg) {
+                font-size: 50px;
+                padding: 20px;
+            }
+
+            @include media-q(sm) {
+                font-size: 40px;
+            }
+
+            @include media-q(xs) {
+                font-size: 30px;
+                padding: 5px;
+            }
+
+        }
+
+
+    }
+
+    @include media-q(lgg) {
+        width: 50%;
+        margin-top: 20%;
+        margin-left: 25%;
+    }
+
+    @include media-q(lg) {
+        width: 55%;
+        margin-left: 20%;
+        margin-top: 25%;
+    }
+
+    @include media-q(md) {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 30%;
+    }
+
+    @include media-q(sm) {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 35%;
+    }
+
+    @include media-q(xs) {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50%;
+    }
+}

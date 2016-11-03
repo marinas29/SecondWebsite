@@ -27,7 +27,7 @@
             <i class="fa fa-envelope-o tabs__icon"></i>
         </label>
 
-        <i class="fa fa-twitter tabs__icon tabs__icon--twitter"></i>
+        <a href="#twitter"> <i class="fa fa-twitter tabs__icon tabs__icon--twitter" ></i> </a>
 
         <div class="tab">
             <div class="firsttab">
@@ -101,11 +101,41 @@
         </div>
         </div>
 
-        <div class="twittermodal">
-        </div>
-
 
     </div>
+
+    <div id="twitter" class="overlay">
+        <div class="twitter-modal">
+
+            <div class="twitter-modal__header">
+                <img src="/images/pic11.jpg" class="twitter-modal__header twitter-modal__header--image" />
+                <i class="fa fa-twitter twitter-modal__header twitter-modal__header--icon-twitter"></i>
+                <a href="#"><i class="fa fa-times twitter-modal__header twitter-modal__header--close" ></i></a>
+            </div>
+
+
+            <div class="twitter-modal__content">
+                <div class="twitter-modal__content__picture">
+                    <i class="fa fa-camera twitter-modal__content__picture--camera" ></i>
+                    <i class="fa fa-camera twitter-modal__content__picture--camera" ></i>
+                    <i class="fa fa-camera " ></i>
+                </div>
+
+                <div class="twitter-modal__content__message">
+                    <textarea name="" class="" id="message" placeholder="What's happening?"></textarea>
+                </div>
+
+                <div class="twitter-modal__content__options">
+                    <i class="fa fa-picture-o twitter-modal__content__options--image" ></i>
+                    <i class="fa fa-map-marker twitter-modal__content__options--localization" ></i>
+                    <i class="fa fa-check twitter-modal__content__options--check"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <div class="footer">
 
