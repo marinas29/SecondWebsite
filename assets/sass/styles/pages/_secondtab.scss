@@ -1,47 +1,46 @@
-.secondtab{
+.secondtab {
     position: relative;
 
-    &__content{
+    &__content {
         width: 1000px;
         height: auto;
-        background-color: white;
+        background-color: $color-base-white;
 
-            &__h1{
-                padding-left: 70px;
-                color: $color-base-black;
-                padding-bottom: 15px;
-                padding-top: 35px;
-                font-size: 30px;
-                text-align: justify;
+        &__title {
+            padding-left: 70px;
+            color: $color-base-black;
+            padding-bottom: 15px;
+            padding-top: 35px;
+            font-size: 30px;
+            text-align: justify;
 
-                @include media-q() {
+            @include media-q() {
                     padding: 20px;
-               }
-
-               @include media-q(xs) {
-                   font-size: 20px;
-              }
             }
 
-            &__paragraph{
-                padding-left: 70px;
-                padding-right: 70px;
-                color: $color-base-grey;
-                font-size: 20px;
-                text-align: justify;
+            @include media-q(xs) {
+                   font-size: 20px;
+            }
+        }
 
-                @include media-q() {
-                    padding: 20px;
-               }
+        &__paragraph {
+            padding-left: 70px;
+            padding-right: 70px;
+            color: $color-base-grey;
+            font-size: 20px;
+            text-align: justify;
 
-               @include media-q(xs) {
+            @include media-q() {
+                padding: 20px;
+            }
+
+            @include media-q(xs) {
                    font-size: 15px;
                    padding: 0px 20px 20px;
-
-              }
             }
+        }
 
-        &__grid{
+        &__grid {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -50,23 +49,22 @@
             padding-bottom: 25px;
             justify-content: space-between;
 
-            & img{
+            & img {
                 margin-bottom: 20px;
 
                 @include media-q() {
                     padding: 0;
-               }
+                }
             }
 
             @include media-q() {
                 justify-content: center;
                 padding: 0;
-           }
+            }
 
-           @include media-q(xs) {
+            @include media-q(xs) {
                justify-content: center;
-          }
-
+            }
         }
 
         @include media-q(lg) {

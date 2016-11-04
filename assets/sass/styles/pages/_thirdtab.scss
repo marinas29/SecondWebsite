@@ -1,16 +1,19 @@
-.thirdtab{
+.thirdtab {
     position: relative;
-    background-color: white;
+    background-color: $color-base-white;
     display: flex;
     flex-direction: column;
     width: 1000px;
     height: auto;
     padding: 20px;
+    padding-top: 0;
 
-    &__h1{
+    &__title {
         color: $color-base-black;
         font-weight: lighter;
+        padding-left: 0;
         padding-bottom: 15px;
+        padding-top: 35px;
         font-size: 30px;
         text-align: justify;
 
@@ -26,23 +29,26 @@
       }
     }
 
-    &__form{
+    &__form {
         display: flex;
         flex-direction: column;
-        width: auto;
-        margin-bottom: 15px;
+    }
+
+    &__group {
+        display: block;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    &__input {
+        display: block;
+        margin-bottom: 35px;
         font-size: 15px;
-        //padding: 10px;
         border: 0;
+        width: 100%;
+        height: 50px;
 
-        & input{
-            display: block;
-            height: 50px;
-            
-
-        }
-
-        &--name-email{
+        &--name-email {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -51,18 +57,9 @@
                 display: flex;
                 flex-direction: column;
            }
-
-            & input {
-                width: 49%;
-
-                @include media-q() {
-                    width: auto;
-               }
-            }
-
         }
 
-        &--message{
+        &--message {
             height: 250px;
         }
     }
@@ -82,5 +79,28 @@
     @include media-q(xs) {
         width: 100%;
     }
+
+}
+
+.error-message {
+    background-color: red;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin-top: -30px;
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+.success-message {
+    background-color: green;
+    font-size: 0.9rem;
+    padding: 5px;
+    width: 10%;
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
 
 }

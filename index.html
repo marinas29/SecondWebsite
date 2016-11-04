@@ -7,146 +7,215 @@
         <link rel="stylesheet" href="dist/app.css">
 
     </head>
+
     <body>
         <div class="content">
 
-        <div class="tabs">
+            <div class="tabs">
 
-        <input type="radio" checked name="tab" id="home" class="input-tab">
-        <label for="home" class="label-tab">
-            <i class="fa fa-home tabs__icon"></i>
-        </label>
+                <input type="radio" checked name="tab" id="home" class="input-tab">
+                <label for="home" class="label-tab" tooltip="Home">
+                    <i class="fa fa-home tabs__icon"></i>
+                </label>
 
-        <input type="radio" name="tab" id="work" class="input-tab">
-        <label for="work" class="label-tab">
-            <i class="fa fa-folder-o tabs__icon"></i>
-        </label>
+                <input type="radio" name="tab" id="work" class="input-tab">
+                <label for="work" class="label-tab" tooltip="Work">
+                    <i class="fa fa-folder-o tabs__icon"></i>
+                </label>
 
-        <input type="radio" name="tab" id="contact" class="input-tab">
-        <label for="contact" class="label-tab">
-            <i class="fa fa-envelope-o tabs__icon"></i>
-        </label>
+                <input type="radio" name="tab" id="contact" class="input-tab" >
+                <label for="contact" class="label-tab" tooltip="Contact">
+                    <i class="fa fa-envelope-o tabs__icon"></i>
+                </label>
 
-        <a href="#twitter"> <i class="fa fa-twitter tabs__icon tabs__icon--twitter" ></i> </a>
+                <a href="#twitter" tooltip="Twitter"> <i class="fa fa-twitter tabs__icon tabs__icon--twitter" ></i> </a>
 
-        <div class="tab">
-            <div class="firsttab">
-                <div class="firsttab__content">
-                    <div class="firsttab__content__text">
-                        <h1 class="firsttab__content__text__h1">Jane Doe</h1>
 
-                        <p class="firsttab__content__text__paragraph">Senior Astral Projectionist</p>
-                    </div>
+                <div class="tab">
+                    <div class="firsttab">
+                        <div class="firsttab__content">
 
-                    <div class="firsttab__content__image">
-                        <img src="/images/me.jpg" />
-                    </div>
+                            <div class="firsttab__content__text">
+                                <h1 class="firsttab__content__text__title">Jane Doe</h1>
+                                <p class="firsttab__content__text__paragraph">Senior Astral Projectionist</p>
+                            </div>
 
-                    <div class="firsttab__content__right" a href="work" >
-                        <i class="fa fa-chevron-right firsttab__content__right firsttab__content__right--icon" ></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class="firsttab__content__image">
+                                <img src="/images/me.jpg" />
+                            </div>
 
-        <div class="tab">
-            <div class="secondtab">
+                            <div class="firsttab__content__right" a href="work" >
+                                <i class="fa fa-chevron-right firsttab__content__right firsttab__content__right--icon" id="button_arrow"  ></i>
+                            </div>
 
-                <div class="secondtab__content">
-                    <h1 class="secondtab__content__h1"> Work </h1>
-
-                    <p class="secondtab__content__paragraph"> Phasellus enim sapien, blandit ullamcorper elementum eu,
-                        condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia luctus elit eget interdum.
-                    </p>
-
-                    <div class="secondtab__content__grid">
-                        <img src="/images/pic01.jpg" />
-                        <img src="/images/pic02.jpg" />
-                        <img src="/images/pic03.jpg" />
-                        <img src="/images/pic04.jpg" />
-                        <img src="/images/pic05.jpg" />
-                        <img src="/images/pic06.jpg" />
-                        <img src="/images/pic07.jpg" />
-                        <img src="/images/pic08.jpg" />
-                        <img src="/images/pic09.jpg" />
-                        <img src="/images/pic10.jpg" />
-                        <img src="/images/pic11.jpg" />
-                        <img src="/images/pic12.jpg" />
-
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="tab">
-            <div class="thirdtab">
-                <h1 class="thirdtab__h1">Contact Me</h1>
-                <div class="thirdtab__form">
 
-                    <div class="thirdtab__form--name-email">
+                <div class="tab">
+                    <div class="secondtab">
 
-                        <input name="" class="thirdtab__form" id="message" placeholder='Name'></input>
-                        <input name="" class="thirdtab__form" id="message" placeholder='Email'></input>
+                        <div class="secondtab__content">
+                            <h1 class="secondtab__content__title"> Work </h1>
+                            <p class="secondtab__content__paragraph"> Phasellus enim sapien, blandit ullamcorper elementum eu,
+                                condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                cubilia luctus elit eget interdum.
+                            </p>
+
+                            <div class="secondtab__content__grid">
+                                <img src="/images/pic01.jpg" />
+                                <img src="/images/pic02.jpg" />
+                                <img src="/images/pic03.jpg" />
+                                <img src="/images/pic04.jpg" />
+                                <img src="/images/pic05.jpg" />
+                                <img src="/images/pic06.jpg" />
+                                <img src="/images/pic07.jpg" />
+                                <img src="/images/pic08.jpg" />
+                                <img src="/images/pic09.jpg" />
+                                <img src="/images/pic10.jpg" />
+                                <img src="/images/pic11.jpg" />
+                                <img src="/images/pic12.jpg" />
+                            </div>
+
+                        </div>
 
                     </div>
-
-                    <input name="" class="thirdtab__form" id="message" placeholder='Subject'></input>
-                    <textarea name="" class="thirdtab__form thirdtab__form--message" id="message" placeholder='Message'></textarea>
-
-                    <input type="submit" class="btn-default" value="Send Message"  />
                 </div>
 
-            </div>
-        </div>
-        </div>
+                <div class="tab">
+                    <div class="thirdtab">
+                        <h1 class="thirdtab__title">Contact Me</h1>
+                        <div class="thirdtab__form">
+                            <div class="row">
+                                <div class="thirdtab__group row">
+                                    <input class="thirdtab__input" id="name" placeholder='Name' value=""/>
+                                </div>
+                                <div class="thirdtab__group">
+                                    <input class="thirdtab__input" id="email" placeholder='Email' value=""/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input name="" class="thirdtab__input" id="subject" placeholder='Subject' value=""/>
+                            </div>
+                            <div class="row">
+                                <textarea name="" class="thirdtab__input thirdtab__input--message" id="message" placeholder='Message'></textarea>
+                            </div>
 
-
-    </div>
-
-    <div id="twitter" class="overlay">
-        <div class="twitter-modal">
-
-            <div class="twitter-modal__header">
-                <img src="/images/pic11.jpg" class="twitter-modal__header twitter-modal__header--image" />
-                <i class="fa fa-twitter twitter-modal__header twitter-modal__header--icon-twitter"></i>
-                <a href="#"><i class="fa fa-times twitter-modal__header twitter-modal__header--close" ></i></a>
-            </div>
-
-
-            <div class="twitter-modal__content">
-                <div class="twitter-modal__content__picture">
-                    <i class="fa fa-camera twitter-modal__content__picture--camera" ></i>
-                    <i class="fa fa-camera twitter-modal__content__picture--camera" ></i>
-                    <i class="fa fa-camera " ></i>
+                            <input type="submit" class="btn-default" value="Send Message" onclick="validate()"/>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="twitter-modal__content__message">
-                    <textarea name="" class="" id="message" placeholder="What's happening?"></textarea>
-                </div>
-
-                <div class="twitter-modal__content__options">
-                    <i class="fa fa-picture-o twitter-modal__content__options--image" ></i>
-                    <i class="fa fa-map-marker twitter-modal__content__options--localization" ></i>
-                    <i class="fa fa-check twitter-modal__content__options--check"></i>
-                </div>
             </div>
 
         </div>
-    </div>
 
 
+        <div id="twitter" class="overlay">
+            <div class="twitter-modal">
 
-    <div class="footer">
+                <div class="twitter-modal__header">
+                    <img src="/images/pic11.jpg" class="twitter-modal__header twitter-modal__header--image" />
+                    <i class="fa fa-twitter twitter-modal__header twitter-modal__header--icon-twitter"></i>
+                    <a href="#"><i class="fa fa-times twitter-modal__header twitter-modal__header--close" ></i></a>
+                </div>
 
-        <ul class="footer__credits">
-            <li class="footer__credits--line1"> © Untitled. </li>
-            <li class="footer__credits--line2"> Design: <a href="http://html5up.net/" class="footer__credits--link">HTML5 UP</a> </li>
-            <li class="footer__credits--line3"> Demo Images: <a href="http://unsplash.com/" class="footer__credits--link">Unsplash</a> </li>
-        </ul>
+                <div class="twitter-modal__content">
+                    <div class="twitter-modal__content__picture">
+                        <i class="fa fa-camera twitter-modal__content__picture__item" ></i>
+                        <i class="fa fa-camera twitter-modal__content__picture__item twitter-modal__content__picture__item--camera" ></i>
+                        <i class="fa fa-camera twitter-modal__content__picture__item" ></i>
+                    </div>
 
-    </div>
+                    <div class="twitter-modal__content__message">
+                        <textarea name="" class="" id="message" placeholder="What's happening?"></textarea>
+                    </div>
 
+                    <div class="twitter-modal__content__options">
+                        <i class="fa fa-picture-o twitter-modal__content__options__item twitter-modal__content__options__item--image" ></i>
+                        <i class="fa fa-map-marker twitter-modal__content__options__item twitter-modal__content__options__item--localization" ></i>
+                        <i class="fa fa-check twitter-modal__content__options__item twitter-modal__content__options__item--check"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <ul class="footer__credits">
+                <li class="footer__credits--row1"> © Untitled. </li>
+                <li class="footer__credits--row2"> Design:
+                    <a href="http://html5up.net/" class="footer__credits--link">HTML5 UP</a> </li>
+                <li class="footer__credits--row3"> Demo Images:
+                    <a href="http://unsplash.com/" class="footer__credits--link">Unsplash</a> </li>
+            </ul>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://rawgit.com/skaterdav85/validatorjs/master/dist/validator.js"> </script>
+
+        <script>
+
+        $(document).ready(function(){
+            $("#button_arrow").click(function(){
+                $("#work").prop('checked', true);
+            });
+        });
+
+        function validate() {
+            $('.thirdtab__form .error-message').detach();
+            $('.thirdtab__form .success-message').detach();
+
+            var fields = {
+                name: $('#name'),
+                email: $('#email'),
+                subject: $('#subject'),
+                message: $('#message')
+            }
+
+            var data = {
+                name: fields.name.val(),
+                email: fields.email.val(),
+                subject: fields.subject.val(),
+                message: fields.message.val()
+            };
+
+            var rules = {
+                name: 'required',
+                email: 'required|email',
+                subject: 'required',
+                message: 'required'
+            };
+
+            var validation = new Validator(data, rules);
+            console.log(validation);
+
+            if (validation.fails()) {
+                for (var field in fields) {
+
+                    if (validation.errors.errors[field]) {
+                        var $span = $('<span class="error-message"></span>');
+                        fields[field].parent().append($span);
+                        $span.text(validation.errors.errors[field][0]);
+                    }
+                }
+            }
+
+            else if (validation.passes()) {
+                var $span = $('<span class="success-message"></span>');
+                $('.thirdtab__form').append($span);
+                $span.text('Done!');
+                for (var field in fields) {
+                fields[field].val('');
+                }
+            }
+        }
+
+        </script>
 
     </body>
 </html>

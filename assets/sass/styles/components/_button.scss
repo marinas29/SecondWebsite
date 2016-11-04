@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
     background-color: $color-base-black;
-    width: 150px;
-    color: #fff;
+    width: 200px;
+    color: $color-base-white;
     letter-spacing: 0.8px;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 25px;
+    border: 0;
+    outline: none;
+    padding: 10px;
 
-    &:hover{
+    &:hover {
         background-color: lighten($color-base-black, 5);
     }
 }

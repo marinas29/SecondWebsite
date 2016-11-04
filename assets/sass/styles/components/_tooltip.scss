@@ -1,0 +1,32 @@
+[tooltip] {
+    position: relative;
+    &:hover {
+        &:before {
+            content: attr(tooltip);
+            background-color: black;
+            color: white;
+            position: absolute;
+            padding: 10px 20px;
+            font-weight: lighter;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media-q() {
+                display: none;
+            }
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            border-top: 15px solid black;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            top: 25px;
+            left: 50%;
+            transform: translate(-50%, 100%);
+        }
+    }
+
+}

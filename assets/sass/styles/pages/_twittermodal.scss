@@ -1,8 +1,8 @@
-.twitter-modal{
+.twitter-modal {
     width: 55%;
-    background-color: white;
+    background-color: $color-base-white;
     position: relative;
-    margin-top: 18%;
+    margin-top: 17.5%;
     margin-left: 22.5%;
     display: flex;
     align-items: center;
@@ -10,23 +10,24 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
+    cursor: pointer;
 
 
-    &__header{
+    &__header {
         display: flex;
         flex-direction: row;
         width: 100%;
         max-height: 110px;
+        cursor: pointer;
 
-        &--image{
+        &--image {
             width: 20%;
             height: 20%;
-
         }
 
-        &--icon-twitter{
-            background-color: #68B6F1;
-            color: white;
+        &--icon-twitter {
+            background-color: $color-base-twitter;
+            color: $color-base-white;
             font-size: 60px;
             width: 60%;
             display: flex;
@@ -55,9 +56,9 @@
             width: 20%;
         }
 
-        &--close{
-            background-color: #68B6F1;
-            color: lighten(#90CBF8, 10);
+        &--close {
+            background-color: $color-base-twitter;
+            color: lighten($color-base-twitter-2, 10);
             font-size: 60px;
             display: flex;
             width: 100%;
@@ -101,35 +102,42 @@
             max-height: 60px;
         }
 
-
-
-
     }
 
-    &__content{
+    &__content {
         display: flex;
         flex-direction: row;
         width: 100%;
 
-        &__picture{
-
+        &__picture {
             display: flex;
             flex-direction: column;
-            font-size: 55px;
-            width: 20%;
             text-align: center;
-            background-color:  lighten(#D5D9E2, 5);
-            padding: 20px;
-            color: darken(#D5D9E2, 20);
-            cursor: pointer;
+            background-color: lighten($color-base-light-grey, 5);
+            width: 20%;
+            font-size: 50px;
+            color: darken($color-base-light-grey, 20);
+            padding: 0px;
 
-            &--camera{
-                border-bottom: 2px solid white;
+            &__item {
+                padding: 25px;
+
+                &--camera {
+                    border-bottom: 1px solid $color-base-white;
+                    border-top: 1px solid $color-base-white;
+                }
+
+                @include media-q(md) {
+                    padding: 20px;
+                }
+
+                @include media-q(xs) {
+                    padding: 5px;
+                }
             }
 
             @include media-q(lg) {
                 font-size: 50px;
-                padding: 20px;
             }
 
             @include media-q(sm) {
@@ -143,11 +151,11 @@
 
         }
 
-        &__message{
+        &__message {
             width: 60%;
             height: auto;
 
-            & textarea{
+            & textarea {
                 height: 100%;
                 width: 100%;
                 font-size: 25px;
@@ -163,35 +171,39 @@
             }
         }
 
-        &__options{
+        &__options {
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-color: lighten(#90CBF8, 10);
+            background-color: lighten($color-base-twitter-2, 10);
             width: 20%;
-            font-size: 55px;
-            padding: 20px;
-            color: darken(#DEEEFC, 25);
-            cursor: pointer;
+            font-size: 50px;
+            color: darken($color-base-twitter, 5);
+            padding: 0px;
 
-            &--image{
-                border-bottom: 2px solid white;
+            &__item{
+                padding: 25px;
 
-            }
+                &--image {
+                }
 
-            &--localization{
-                border-bottom: 2px solid white;
+                &--localization {
+                    border-bottom: 1px solid $color-base-white;
+                    border-top: 1px solid $color-base-white;
 
-            }
+                }
 
-            &--check{
-                color: white;
-                font-weight: lighter;
-            }
+                &--check {
+                    color: $color-base-white;
+                }
 
-            @include media-q(lg) {
-                font-size: 50px;
-                padding: 20px;
+                @include media-q(md) {
+                    padding: 20px;
+                }
+
+                @include media-q(xs) {
+                    padding: 5px;
+                }
             }
 
             @include media-q(sm) {
@@ -200,12 +212,8 @@
 
             @include media-q(xs) {
                 font-size: 30px;
-                padding: 5px;
             }
-
         }
-
-
     }
 
     @include media-q(lgg) {
